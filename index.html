@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>PizzaShop</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+
+                    <a href="#home" class="header__logo">pizzashop</a>
+
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li><a href="#home" class="header__link active-header">Home</a></li>
+                            <li><a href="#menu" class="header__link">Menu</a></li>
+                            <li><a href="#events" class="header__link">Events</a></li>
+                            <li><a href="#about" class="header__link">About us</a></li>
+                            <button class="header-logBurger">Log in</button>
+                        </ul>
+                    </nav>
+
+                    <div class="header__log">
+                        <button class="header__log-in">Log in</button>
+                        <div class="header__basket">
+                            <button class="header__basket-button">
+                                <img src="img/basket-header.svg" alt="basket-button">
+                            </button>
+                        </div>
+
+                        <div class="header-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+
+            <section class="home" id="home">
+                <div class="container">
+                    <div class="home__body">
+
+                        <div class="home__block-text">
+                            <h1 class="home__title">The Fastest</h1>
+                            <h1 class="home__title-dec">Pizza <span class="home__decore-title"></span> Delivery</h1>
+                            <p class="home__text">We will deliver juicy pizza for your family in 30 minutes, if the courier is late - <span class="home__strong">pizza is free</span>!</p>
+
+                            <div class="home__videos">
+                                <p class="home__title-vid">Cooking process:</p>
+                                <!-- video none -->
+                                <a href="#"><img class="home__video" src="img/video.png" alt="video"></a>
+                            </div>
+
+                            <div class="home__button-block">
+                                <button class="home__order">To order</button>
+                                <p class="home__menu">Pizza-Menu</p>
+                            </div>
+                        </div>
+
+                        <div class="home__block-img">
+                            <div class="home__img">
+                                <img class="home__main" src="img/img-home.png" alt="img-home">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu" id="menu">
+                <div class="container">
+                    <div class="menu__body">
+
+                        <h1 class="menu__title">Menu</h1>
+
+                            <div class="menu__tabs">
+                                <button class="menu__button-tab active-tab">Show All</button>
+                                <button class="menu__button-tab">Meat</button>
+                                <button class="menu__button-tab">Vegetarian</button>
+                                <button class="menu__button-tab">Sea products</button>
+                                <button class="menu__button-tab">Mushroom</button>
+                            </div>
+
+                        <div class="menu__blockCard">
+                            <div class="cards">
+
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button data-tab class="cards__button-tab">22</button>
+                                        <button data-tab class="cards__button-tab active-bt">28</button>
+                                        <button data-tab class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+    
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+    
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+    
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="menu__banner">
+                            <div class="menu__banner-text">MOST POPULAR PIZZA</div>
+                        </div>
+
+                        <div class="menu__blockCard">
+                            <div class="cards">
+
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+    
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+    
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+    
+                                <div class="cards__card">
+                                    <img src="img/pizzaOne.png" alt="card-img" class="cards__img">
+                                    <h2 class="cards__title">Italian</h2>
+                                    <p class="cards__info">Filling: onion, potato, tomato, mushrooms, cheese, olives, meat...</p>
+    
+                                    <div class="cards__card-tabs">
+                                        <button class="cards__button-tab">22</button>
+                                        <button class="cards__button-tab active-bt">28</button>
+                                        <button class="cards__button-tab">33</button>
+                                    </div>
+    
+                                        <button class="cards__ingridients">
+                                            <span class="cards__text-b">+ Ingridients</span>
+                                        </button>
+                                
+                                    
+                                    <div class="cards__price-block">
+                                        <div class="cards__price">8,35<span class="cards__dollar">$</span></div>
+                                        <div class="cards__amout-block">
+                                            <button class="cards__minus">-</button>
+                                            <div class="cards__amout">1</div>
+                                            <button class="cards__plus">+</button>
+                                        </div>
+                                    </div>
+    
+                                    <button class="cards__order">Order Now</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="events" id="events">
+                <div class="container">
+                    <div class="events__body">
+
+                        <div class="events__mob">
+                            <h1 class="events__gridT">Events</h1>
+                            <p class="events__gridP">There are regular events in our pizzeria that will allow you to eat delicious food for a lower price!</p>
+                         </div>
+
+                        <div class="events__grids">
+                            <div class="events__gridOne events__gridMax" style="background: url('img/grid1.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">HOW WE COOKING</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+
+                            <div class="events__gridTwo events__gridMax" style="background: url('img/grid2.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">OUR BLOG</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+
+                            <div class="events__gridThree">
+                            <h1 class="events__gridT">Events</h1>
+                            <p class="events__gridP">There are regular events in our pizzeria that will allow you to eat delicious food for a lower price!</p>
+                            </div>
+
+                            <div class="events__gridFour events__gridMax" style="background: url('img/grid3.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">TWO PIZZA FOR 1 PRICE</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+
+                            <div class="events__gridFive events__gridMax" style="background: url('img/grid4.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">KITCHEN TOUR</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+
+                            <div class="events__gridSix events__gridMax" style="background: url('img/grid5.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">FREE COFFEE FOR 3 PIZZA</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+
+                            <div class="events__gridSeven events__gridMax" style="background: url('img/grid6.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">OUR INSTAGRAM</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+
+                            <div class="events__gridEight events__gridMax" style="background: url('img/grid7.jpg'); background-position: center; background-size: cover;">
+                                <h1 class="events__gridTitle">WHERE ARE YOU CHOOSE US?</h1>
+                                <button class="events__gridButton">More</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__body">
+
+                        <div class="about__info">
+                            <h1 class="about__title">About us</h1>
+                            <p class="about__text">In just a couple of years, we have opened 6 outlets in different cities: Kazan, Chelyabinsk, Ufa, Samara, Izhevsk, and in the future we plan to develop the network in other major cities of Russia.</p>
+                            <img src="img/pizzaAbout.png" alt="img" class="about__img-info">
+                            <p class="about__text">The kitchen of each point is at least: 400-500 sq. m. meters, hundreds of employees, smoothly performing work in order to receive / prepare / form / deliver customer orders on time.</p>
+                        </div>
+
+                        <div class="about__img">
+                            <img src="img/aboutMain.jpg" alt="img-main" class="about__img-main">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__body">
+
+                    <div class="footer__block-top">
+                        <a href="#home" class="footer__logo">pizzashop</a>
+
+                        <div class="footer__navBlock">
+                            <nav class="footer__nav">
+                                <div class="footer__title">Home</div>
+                                <ul class="footer__list">
+                                    <li><a href="#" class="footer__link">To Order</a></li>
+                                    <li><a href="#" class="footer__link">About us</a></li>
+                                    <li><a href="#" class="footer__link">Events</a></li>
+                                    <li><a href="#" class="footer__link">Menu</a></li>
+                                </ul>
+                            </nav>
+    
+                            <nav class="footer__nav">
+                                <div class="footer__title">Events</div>
+                                <ul class="footer__list">
+                                    <li><a href="#" class="footer__link">3 Pizza 1 Free Coffee</a></li>
+                                    <li><a href="#" class="footer__link">2 Pizza for 1 Price</a></li>
+                                    <li><a href="#" class="footer__link">Kitchen Tour</a></li>
+                                </ul>
+                            </nav>
+    
+                            <nav class="footer__nav">
+                                <div class="footer__title">Menu</div>
+                                <ul class="footer__list">
+                                    <li><a href="#" class="footer__link">Show All</a></li>
+                                    <li><a href="#" class="footer__link">Seaproducts</a></li>
+                                    <li><a href="#" class="footer__link">Vegan</a></li>
+                                    <li><a href="#" class="footer__link">Meat</a></li>
+                                </ul>
+                            </nav>
+    
+                            <nav class="footer__nav">
+                                <div class="footer__title">About Us</div>
+                                <ul class="footer__list">
+                                    <li><a href="#" class="footer__link">Our History</a></li>
+                                    <li><a href="#" class="footer__link">Why We?</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+
+                    <div class="footer__block-soc">
+                        <a href="tel:+7937333-55-33" class="footer__tel">+7 (937) 333-55-33</a>
+                        <div class="footer__soc">
+                            <a href="#" class="footer__socS"><img src="img/inst.png" alt="img-soc"></a>
+                            <a href="#" class="footer__socS"><img src="img/twitter.png" alt="img-soc"></a>
+                            <a href="#" class="footer__socS"><img src="img/facebook.png" alt="img-soc"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
