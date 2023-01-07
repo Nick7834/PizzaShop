@@ -1,0 +1,33 @@
+// global 
+
+@import "./global/global";
+@import "./global/vars";
+
+// main 
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+  
+.container {
+    max-width: 1284px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// blocks
+
+@import "./blocks/header";
+@import "./blocks/home";
+@import "./blocks/menu";
+@import "./blocks/events";
+@import "./blocks/about";
+@import "./blocks/footer";
+
+// fonts 
+
+@import "./fonts.css";

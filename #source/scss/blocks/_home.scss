@@ -1,0 +1,200 @@
+.home {
+    margin: 61px 0 112px;
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 850px) {
+            flex-direction: column-reverse;
+            justify-content: center;
+        }
+    }
+
+    &__block-text {
+        @media (max-width: 850px) {
+            margin-top: 76px;
+        }
+    }
+
+    &__title, &__title-dec {
+        font-family: 'Muller';
+        font-weight: 800;
+        font-size: clamp(2.188rem, calc(1.482rem + 3.53vw), 4.313rem);
+        line-height: 109%;
+
+        color: $white;
+    }
+
+    &__title {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            right: 28px;
+            background: url('../img/arrowOne.svg') no-repeat;
+            width: 105px;
+            height: 37px;
+                @media (max-width: 850px) {
+                    display: none;
+                }
+        }
+    }
+
+    &__title-dec {
+        display: flex;
+        gap: 15px;
+    }
+
+    &__decore-title {
+        display: block;
+        background: url('../img/decore-title.svg') no-repeat;
+        min-width: clamp(2.188rem, calc(1.793rem + 1.97vw), 3.375rem);
+        background-size: contain;
+        height: clamp(3.75rem, calc(3.231rem + 2.59vw), 5.313rem);
+    }
+
+    &__text {
+        margin-top: 12px;
+        max-width: 411px;
+        font-family: 'Muller';
+        font-weight: 400;
+        font-size: clamp(0.875rem, calc(0.719rem + 0.58vw), 1.188rem);
+        line-height: 30px;
+
+        color: $lightGray;
+    }
+
+    &__strong {
+        color: $white;
+    }
+
+    &__videos {
+        margin: 23px 0 58px;
+    }
+
+    &__title-vid {
+        margin-bottom: 12px;
+        font-family: 'Muller';
+        font-weight: 400;
+        font-size: clamp(0.875rem, calc(0.719rem + 0.58vw), 1.188rem);
+        line-height: 1.36;
+
+        color: $lightGray;
+    }
+
+    &__video {
+        width: clamp(12.125rem, calc(10.507rem + 8.09vw), 17rem);
+        border-radius: 23px;
+        filter: drop-shadow(0px 4px 29px rgba(255, 78, 21, 0.1));
+    }
+
+    &__button-block {
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 62px;
+        width: clamp(17.25rem, calc(14.926rem + 11.62vw), 24.25rem);
+
+        gap: 19px;
+
+        border-radius: 100px;
+        background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: -2px;
+            bottom: -2px;
+            left: -2px;
+            right: -2px;
+            background: linear-gradient(261deg, #FFA631, #FF6939);
+            border-radius: 100px;
+            z-index: -1;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 12px;
+            right: -200px;
+            background: url('../img/arrowTwo.svg') no-repeat;
+            width: 148px;
+            height: 147px;
+                @media (max-width: 850px) {
+                    display: none;
+                }
+        }
+    }
+
+    &__order {
+        padding: clamp(0.75rem, calc(0.646rem + 0.52vw), 1.063rem) 
+                 clamp(3.125rem, calc(2.669rem + 2.28vw), 4.5rem);
+        border: 0;
+        height: 100%;
+        background: linear-gradient(261.48deg, #FE9C1C -17.13%, #FF5E2A 86.76%);
+        border-radius: 100px;
+
+        font-family: 'Muller';
+        font-weight: 500;
+        font-size: clamp(1rem, calc(0.876rem + 0.62vw), 1.375rem);
+        line-height: 1.24;
+
+        color: $white;
+    }
+
+    &__menu {
+        font-family: 'Muller';
+        font-weight: 500;
+        font-size: clamp(0.813rem, calc(0.709rem + 0.52vw), 1.125rem);
+        line-height: 123.5%;
+
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-emphasis-color: transparent;
+    }
+
+    // img 
+
+    &__img {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -134px;
+            right: -112px;
+            background: url('../img/pizzaDec.png') no-repeat;
+            background-size: contain;
+            min-width: clamp(8.125rem, calc(4.868rem + 16.29vw), 17.938rem);
+            height: 305px;
+            z-index: 1;
+            @media (max-width: 850px) {
+                top: clamp(-5rem, calc(-3.963rem + -5.19vw), -8.125rem);
+                right: clamp(-4.063rem, calc(-3.191rem + -4.36vw), -6.688rem);
+            }
+        }
+
+         &::after {
+            content: '';
+            position: absolute;
+            top: clamp(18.063rem, calc(13.436rem + 23.13vw), 32rem);
+            right: clamp(11.25rem, calc(8.117rem + 15.66vw), 20.688rem);
+            background: url('../img/friesDec.png') no-repeat;
+            min-width: clamp(6.875rem, calc(3.638rem + 16.18vw), 16.625rem);
+            background-size: contain;
+            height: clamp(7.813rem, calc(2.584rem + 26.14vw), 23.563rem);
+            filter: drop-shadow(-2px -15px 17px rgba(17, 8, 0, 0.48));
+            z-index: 1;
+        }
+    }
+
+    &__main {
+        width: clamp(15.188rem, calc(8.531rem + 24.88vw), 28.5rem);
+        border-radius: 46px;
+        filter: drop-shadow(0px 4px 33px rgba(255, 78, 21, 0.29));
+    }
+}

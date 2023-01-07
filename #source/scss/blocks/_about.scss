@@ -1,0 +1,100 @@
+.about {
+    margin-bottom: clamp(4rem, calc(2.5rem + 7.5vw), 8.125rem);
+    &__info {
+        position: relative;
+        margin-top: 63px;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 180px;
+            right: -130px;
+            background: url('../img/arrowOne.svg');
+            width: 105px;
+            height: 37px;
+            @media(max-width: 850px) {
+                display: none;
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+            @media(max-width: 850px) {
+                flex-direction: column-reverse;
+                justify-content: center;
+            }
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        font-weight: 800;
+        font-size: clamp(3rem, calc(2.564rem + 2.18vw), 4.313rem);
+        line-height: 1.09;
+        
+        color: $white;       
+    }
+
+    &__text {
+        max-width: 459px;
+
+        font-weight: 400;
+        font-size: clamp(0.875rem, calc(0.771rem + 0.52vw), 1.188rem);
+        line-height: 27px;
+
+        color: $lightGray;
+
+        z-index: 4;
+        position: relative;
+    }
+
+    &__img-info {
+        width: calc(100% - 20%);
+        position: relative;
+        margin: 22px 0 23px;
+    }
+
+    &__img-main {
+        width: clamp(16rem, calc(10.087rem + 29.56vw), 33.813rem);
+        height: clamp(15.313rem, calc(8.943rem + 31.85vw), 34.5rem);
+        filter: drop-shadow(-15px 21px 68px rgba(103, 25, 0, 0.23));
+        border-radius: 34px;
+    }
+
+    &__img {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -141px;
+            right: -106px;
+            background: url('../img/pizzaDec.png') no-repeat;
+            background-size: contain;
+            min-width: clamp(8.125rem, calc(4.868rem + 16.29vw), 17.938rem);
+            height: 304px;
+            z-index: 2;
+            @media (max-width: 850px) {
+                top: clamp(-5.625rem, calc(-4.466rem + -5.8vw), -8.813rem);
+                right: clamp(-3.625rem, calc(-2.534rem + -5.45vw), -6.625rem);
+            }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -198px;
+            left: -137px;
+            background: url('../img/friesDec.png') no-repeat;
+            min-width: clamp(6.875rem, calc(3.638rem + 16.18vw), 16.625rem);
+            background-size: contain;
+            height: clamp(7.813rem, calc(2.584rem + 26.14vw), 23.563rem);
+            z-index: 2;
+            @media (max-width: 850px) {
+                bottom: clamp(-4.438rem, calc(-1.551rem + -14.43vw), -12.375rem);
+                left: clamp(-4.438rem, calc(-2.938rem + -7.5vw), -8.563rem);
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  min-width: 320px;
+  background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
+  font-family: 'Muller';
+  @media (max-width: 850px) {
+   &._active {
+    overflow: hidden;
+   }
+  }
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+::selection {
+  background: #7194c4; 
+  color: #fff; 
+}
+
+:root {
+scroll-behavior: smooth;
+}

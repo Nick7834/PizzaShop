@@ -1,0 +1,86 @@
+.footer {
+    padding: clamp(2.563rem, calc(1.903rem + 3.3vw), 4.375rem) 0 clamp(2.563rem, calc(2.063rem + 2.5vw), 3.938rem);
+    background: linear-gradient(245.71deg, #170A00 4.96%, #170600 33.7%, #0F0700 68.41%, #170A00 96.42%);
+
+    &__block-top {
+        margin-bottom: 97px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        margin-bottom: 47px;
+        margin-right: clamp(2.938rem, calc(2.097rem + 4.2vw), 5.25rem);
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 1.09;
+        
+        background: linear-gradient(261.69deg, #FF6432 12.12%, #FFA228 86.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;        
+    }
+
+    &__navBlock {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 27px clamp(2.938rem, calc(2.097rem + 4.2vw), 5.25rem);
+    }
+
+    &__title {
+        margin-bottom: 19px;
+        font-weight: 400;
+        font-size: clamp(1.188rem, calc(1.165rem + 0.11vw), 1.25rem);
+        line-height: 1.25;
+
+        letter-spacing: -0.02em;
+
+        color: $lightGray;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: clamp(0.875rem, calc(0.784rem + 0.45vw), 1.125rem);
+        line-height: 1.25;
+
+        letter-spacing: -0.02em;
+
+        color: $darkGray;
+
+        transition: .5s ease;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &__block-soc {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__tel {
+        font-weight: 400;
+        font-size: clamp(0.875rem, calc(0.716rem + 0.8vw), 1.313rem);
+        line-height: 1.25;
+
+        letter-spacing: -0.02em;
+
+        background: linear-gradient(261.69deg, #FF612E 12.12%, #FFA32B 86.72%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__soc {
+        display: flex;
+        gap: 10px;
+    }
+}
