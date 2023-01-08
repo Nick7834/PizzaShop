@@ -30,7 +30,7 @@ body {
   scroll-behavior: smooth;
   line-height: 1.5;
   min-width: 320px;
-  background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
+  background: black;
   font-family: 'Muller';
 }
 
@@ -880,7 +880,9 @@ h1, h2, h3, h4, h5, h6, p {
   grid-template-columns: repeat(3, auto);
   -ms-grid-rows: 1fr clamp(0.875rem, calc(0.648rem + 1.14vw), 1.5rem) 1fr clamp(0.875rem, calc(0.648rem + 1.14vw), 1.5rem) 1fr;
   grid-template-rows: repeat(3, 1fr);
-      grid-template-areas: 'one two two two two two three' 'four four four five five five five' 'six six seven seven seven seven eight';
+      grid-template-areas: 'one two two two two two three'
+ 'four four four five five five five'
+ 'six six seven seven seven seven eight';
   gap: clamp(0.875rem, calc(0.648rem + 1.14vw), 1.5rem);
   overflow-x: auto;
   overflow-y: hidden;
