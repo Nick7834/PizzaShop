@@ -27,10 +27,11 @@ body {
 }
 
 body {
+  height: 100%;
   scroll-behavior: smooth;
   line-height: 1.5;
   min-width: 320px;
-  background: black;
+  background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%);
   font-family: 'Muller';
 }
 
