@@ -25,7 +25,6 @@ body {
   scroll-behavior: smooth;
   line-height: 1.5;
   min-width: 320px;
-  background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%) no-repeat;
   font-family: 'Muller';
 }
 
@@ -83,6 +82,7 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+   background: linear-gradient(245.71deg, #1E0C00 4.96%, #1F0700 33.7%, #170A00 68.41%, #1E0D00 96.42%) no-repeat;
   min-height: 100%;
 }
 
